@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>yuandongguoji</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,height=device-height,maximum-scale=1.0,user-scalable=no"/>
+  <meta name="renderer" content="webkit">
+  <meta name="keywords" content="李壮,lizuang,lizhuang.xyz,wwww.lizhuang.xyz,李壮个人主页,优秀是一种习惯,Strong Lee,just be free,justbefree">
+  <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon"/>
+  <style type="text/css">
+    html,body {
+      width: 100%;
+      height: 100%;
+    }
+    h1{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      margin-left: -150px;
+      height: 100px;
+      margin-top: -50px;
+      text-align: center;
+      user-select: none;
+      color: #fff;
+    }
+    *{margin: 0;padding: 0;font-family: "Lucida Grande";}
+    #d3_loading{width: 100%;height: 100%;background:#2D001F;}
+  </style>
+</head>
+<body>
+  <div id="d3_loading">
+    <h1 id="greeting">Hello</h1>
+    <script type="text/javascript">
+      "use strict";
+      (function () {
+        var greeting = ["Hello", "你好", "안녕하세요", "こんにちは", "Bonjour", "Moiẽn", "Hallå", "Hallo", "Halló", "Tungjatjeta", "Alo", "Illāc", "Ciao", "Hola", "Bonjou", "Olá", "‏هتاف للترحيب, ‏أهلا", "السلام عليكم", "درود", "הלו", "גוט־מאָרגן", "สวัสดีครับ", "नमस्ते", "नम्स्कार"];
+        var length = greeting.length;
 
+        function d() {
+          var index = 0;
+          setInterval(function () {
+            document.getElementById("greeting").innerHTML = greeting[index % length];
+            document.title = greeting[index % length];
+            index += 1;
+          }, 2000);
+        }
+        d();
+        console &&
+          console.log(
+            "%c Just be free %c I know you will find me! %c",
+            "background:#35495e ; font-size: 20px; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff",
+            "background:#007aff ; padding: 1px; border-radius: 0 3px 3px 0; font-size: 20px;  color: #fff",
+            "background:transparent"
+          );
+        window.addEventListener("resize", function() {
+          window.location.href = "https://github.com/justbefree";
+        }, false);
+      })();
+    </script>
+  </div>
+</body>
+</html>
